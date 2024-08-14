@@ -22,6 +22,9 @@ public class Basket {
     }
 
     public boolean remove(String bagel){
-        return true;
+        if(orderedBagels.contains(bagel)){
+            return true;
+        }
+        return false;
     }
 }
