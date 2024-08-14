@@ -35,6 +35,7 @@ class BasketTest {
 
     @Test
     public void testRemoveExists(){
+        basket.order("bagelOne");
         Assertions.assertTrue(basket.remove("bagelOne"));
     }
 

@@ -17,24 +17,31 @@ public class Basket {
 
     public boolean order(String bagel){
         if(!bagels.contains(bagel)){
+            full();
+            System.out.println("Bagel not found!");
             return false;
         }
         orderedBagels.add(bagel);
+        System.out.println("Bagel added.");
         return true;
     }
 
     public boolean remove(String bagel){
         if(orderedBagels.contains(bagel)){
             orderedBagels.remove(bagel);
+            System.out.println("Bagel removed.");
             return true;
         }
+        System.out.println("Bagel not found!");
         return false;
     }
 
     public boolean full(){
         if(orderedBagels.size() >= capacity){
+            System.out.println("Basket is full!");
             return true;
         }
+        System.out.println("Basket is not full.");
         return false;
     }
 
