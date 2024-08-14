@@ -17,6 +17,7 @@ public class Basket {
         if(!bagels.contains(bagel)){
             return false;
         }
+        orderedBagels.add(bagel);
         return true;
     }
 }
