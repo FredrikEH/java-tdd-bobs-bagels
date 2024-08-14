@@ -26,4 +26,10 @@ class BasketTest {
     public void testOrderedBagelsExist(){
         Assertions.assertTrue(basket.orderedBagels.isEmpty());
     }
+
+    @Test
+    public void testOrderAddsToOrderedBagels(){
+        basket.order("bagelOne");
+        Assertions.assertTrue(basket.orderedBagels.contains("bagelOne"));
+    }
 }
