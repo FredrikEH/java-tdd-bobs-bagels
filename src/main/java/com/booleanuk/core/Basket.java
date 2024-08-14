@@ -6,6 +6,12 @@ public class Basket {
 
     ArrayList<String> bagels = new ArrayList<String>();
 
+    Basket(){
+        bagels.add("bagelOne");
+        bagels.add("bagelTwo");
+        bagels.add("bagelThree");
+    }
+
     public boolean order(String bagel){
         if(bagel.isEmpty()){
             return false;
