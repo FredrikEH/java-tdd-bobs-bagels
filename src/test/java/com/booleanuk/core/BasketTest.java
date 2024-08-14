@@ -16,4 +16,9 @@ class BasketTest {
     public void testBagelsExist(){
         Assertions.assertFalse(basket.bagels.isEmpty());
     }
+
+    @Test
+    public void testOrderFunction(){
+        Assertions.assertFalse(basket.order(("bagelFour")));
+    }
 }
