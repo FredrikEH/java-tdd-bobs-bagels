@@ -44,4 +44,9 @@ class BasketTest {
         Assertions.assertFalse(basket.remove("bagelTwo"));
         Assertions.assertTrue(basket.remove("bagelOne"));
     }
+
+    @Test
+    public void testFullFunction(){
+        Assertions.assertFalse(basket.full());
+    }
 }

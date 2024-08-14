@@ -6,11 +6,13 @@ public class Basket {
 
     ArrayList<String> bagels = new ArrayList<String>();
     ArrayList<String> orderedBagels = new ArrayList<>();
+    int capacity;
 
     Basket(){
         bagels.add("bagelOne");
         bagels.add("bagelTwo");
         bagels.add("bagelThree");
+        capacity = 5;
     }
 
     public boolean order(String bagel){
@@ -27,5 +29,9 @@ public class Basket {
             return true;
         }
         return false;
+    }
+
+    public boolean full(){
+        return true;
     }
 }
