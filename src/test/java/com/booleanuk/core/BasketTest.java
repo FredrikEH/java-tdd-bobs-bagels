@@ -32,4 +32,9 @@ class BasketTest {
         basket.order("bagelOne");
         Assertions.assertTrue(basket.orderedBagels.contains("bagelOne"));
     }
+
+    @Test
+    public void testRemoveExists(){
+        Assertions.assertTrue(basket.remove("bagelOne"));
+    }
 }
