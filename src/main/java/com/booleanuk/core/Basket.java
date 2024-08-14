@@ -13,7 +13,7 @@ public class Basket {
     }
 
     public boolean order(String bagel){
-        if(bagel.isEmpty()){
+        if(!bagels.contains(bagel)){
             return false;
         }
         return true;
