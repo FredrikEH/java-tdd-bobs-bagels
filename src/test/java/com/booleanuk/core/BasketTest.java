@@ -37,4 +37,9 @@ class BasketTest {
     public void testRemoveExists(){
         Assertions.assertTrue(basket.remove("bagelOne"));
     }
+
+    @Test
+    public void testRemoveFunction(){
+        Assertions.assertFalse(basket.remove("bagelTwo"));
+    }
 }
