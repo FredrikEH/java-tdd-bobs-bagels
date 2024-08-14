@@ -23,6 +23,7 @@ public class Basket {
 
     public boolean remove(String bagel){
         if(orderedBagels.contains(bagel)){
+            orderedBagels.remove(bagel);
             return true;
         }
         return false;

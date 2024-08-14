@@ -40,6 +40,8 @@ class BasketTest {
 
     @Test
     public void testRemoveFunction(){
+        basket.order("bagelOne");
         Assertions.assertFalse(basket.remove("bagelTwo"));
+        Assertions.assertTrue(basket.remove("bagelOne"));
     }
 }
