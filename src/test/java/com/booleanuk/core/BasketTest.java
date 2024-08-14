@@ -51,8 +51,8 @@ class BasketTest {
     }
 
     @Test
-    //extra commit
     public void testSetCapacityFunction(){
         Assertions.assertTrue(basket.setCapacity(15));
+        Assertions.assertEquals(15, basket.capacity);
     }
 }
