@@ -12,9 +12,8 @@ class BasketTest {
         Assertions.assertFalse(basket.order(""));
     }
 
-    /*
     @Test
     public void testBagelsExist(){
-        Assertions.assertTrue(basket.bagels.add(1));
-    }*/
+        Assertions.assertFalse(basket.bagels.isEmpty());
+    }
 }
