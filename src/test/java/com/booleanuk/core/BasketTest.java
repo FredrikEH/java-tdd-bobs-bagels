@@ -45,6 +45,7 @@ class BasketTest {
         Assertions.assertTrue(basket.orderedBagels.contains("bagelOne"));
         Assertions.assertFalse(basket.remove("bagelTwo"));
         Assertions.assertTrue(basket.remove("bagelOne"));
+        Assertions.assertFalse(basket.remove("bagelOne"));
         Assertions.assertFalse(basket.orderedBagels.contains("bagelOne"));
     }
 
