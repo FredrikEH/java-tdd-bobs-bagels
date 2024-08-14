@@ -32,6 +32,9 @@ public class Basket {
     }
 
     public boolean full(){
-        return true;
+        if(orderedBagels.size() >= capacity){
+            return true;
+        }
+        return false;
     }
 }
