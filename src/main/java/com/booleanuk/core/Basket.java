@@ -20,4 +20,8 @@ public class Basket {
         orderedBagels.add(bagel);
         return true;
     }
+
+    public boolean remove(String bagel){
+        return true;
+    }
 }
