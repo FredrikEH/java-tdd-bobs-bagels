@@ -7,4 +7,4 @@
 |          |                                   |                        | If orderedBagels does not contain bagel | Return false        |
 |          |                                   | `full()`               | If orderedBagels is full                | Return true         |
 |          |                                   |                        | If orderedBagels is not full            | Return false        |
-|          |                                   | `capacity(int i)`      |                                         | Capacity is changed |
+|          |                                   | `setCapacity(int i)`   |                                         | Capacity is changed |

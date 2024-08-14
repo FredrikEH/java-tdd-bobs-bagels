@@ -37,4 +37,8 @@ public class Basket {
         }
         return false;
     }
+
+    public boolean setCapacity(int newCap){
+        return false;
+    }
 }

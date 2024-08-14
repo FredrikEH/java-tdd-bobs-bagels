@@ -49,4 +49,9 @@ class BasketTest {
     public void testFullFunction(){
         Assertions.assertFalse(basket.full());
     }
+
+    @Test
+    public void testSetCapacityFunction(){
+        Assertions.assertTrue(basket.setCapacity(15));
+    }
 }
