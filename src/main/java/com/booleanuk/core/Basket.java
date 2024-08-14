@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Basket {
 
     ArrayList<String> bagels = new ArrayList<String>();
+    ArrayList<String> orderedBagels = new ArrayList<>();
 
     Basket(){
         bagels.add("bagelOne");
