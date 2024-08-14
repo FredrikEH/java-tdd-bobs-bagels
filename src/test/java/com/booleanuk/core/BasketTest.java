@@ -9,6 +9,12 @@ class BasketTest {
 
     @Test
     public void testOrderExists(){
-        Assertions.assertTrue(basket.order(""));
+        Assertions.assertFalse(basket.order(""));
     }
+
+    /*
+    @Test
+    public void testBagelsExist(){
+        Assertions.assertTrue(basket.bagels.add(1));
+    }*/
 }
